@@ -1,0 +1,12 @@
+---
+- name: Install  
+  yum: pkg={{ item }} state=installed
+  with_items:
+    - php
+    - php-mysql
+    - php-common
+    - php-xml
+    - php-gd
+    - php-tidy
+    - php-pear
+    - httpd
